@@ -8,11 +8,122 @@ DARK BLUE: #1D3557
 
 */
 
+/* Alternative Box Model */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+/* ----------------- */
+
 body {
-  margin: 0;
+  margin: 0 auto;
   text-align: center;
+  width: 720px;
 }
 
 img {
   width: 100px;
+}
+
+/* || hero section */
+.hero-section {
+  height: 343px;
+  background-image: url("./images/essaouira-morocco.jpeg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section h1 {
+  background-color: #1d3557;
+  color: #fff;
+  font-size: 32px;
+  border-radius: 10px;
+  padding: 3px 12px;
+  margin-bottom: 11px;
+}
+
+.hero-section h2 {
+  width: 412px;
+  border-radius: 10px;
+  margin-top: 0;
+  font-size: 18px;
+  color: #fff;
+  background-color: #457b9d;
+  padding: 5px 28px;
+}
+
+/* || Activities Section */
+.places {
+  background-color: #f1faee;
+  padding: 38px 34px;
+  color: #1d3557;
+}
+.places h2 {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+.places .content {
+  display: flex;
+  gap: 20px;
+}
+.place {
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 54px;
+}
+.place img {
+  border-radius: 50%;
+  margin-bottom: 22px;
+}
+.place h3 {
+  margin: 0;
+}
+.place p {
+  margin-top: 17px;
+}
+
+/* || Guide Section */
+.guide {
+  width: 400px;
+  /* height: 300px; */
+  margin: auto;
+  background-color: #a8dadc;
+  border-bottom: #1d3557 solid 6px;
+  border-radius: 10px;
+  padding: 23px 13px;
+  margin: 25px auto 50px;
+
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.guide img {
+  width: 180px;
+  height: 248px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.guide h3 {
+  margin-bottom: 14px;
+  font-size: 24px;
+}
+.guide p {
+  margin: 0;
+  font-size: 16px;
+  font-style: italic;
+}
+.guide h4 {
+  font-size: 16px;
 }
